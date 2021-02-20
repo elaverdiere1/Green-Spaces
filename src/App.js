@@ -10,6 +10,9 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 
+// Green Spaces
+import LandingPage from './components/LandingPage/LandingPage'
+
 class App extends Component {
   constructor () {
     super()
@@ -53,6 +56,8 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' component={LandingPage}/>
+
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
