@@ -12,6 +12,7 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 
 // Green Spaces
 import LandingPage from './components/LandingPage/LandingPage'
+import ParkMap from './components/Map/ParkMap'
 
 class App extends Component {
   constructor () {
@@ -57,6 +58,8 @@ class App extends Component {
         ))}
         <main className="container">
           <Route exact path='/' component={LandingPage}/>
+
+          <Route exact path='/map' render={() => (<ParkMap />)} />
 
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />

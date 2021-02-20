@@ -18,7 +18,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link href="#/">Home</Nav.Link>
+    <Nav.Link href="#map">Map</Nav.Link>
   </Fragment>
 )
 
