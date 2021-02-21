@@ -57,7 +57,7 @@ class App extends Component {
           />
         ))}
         <main className="container">
-          <Route exact path='/' component={LandingPage}/>
+          <Route exact path='/LandingPage' component={LandingPage}/>
 
           <Route exact path='/map' render={() => (<ParkMap />)} />
 

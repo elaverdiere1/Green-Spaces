@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps'
+// import Data from './data'
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 function Map (props) {
   const [parks, setParks] = useState(null)
@@ -35,7 +39,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map))
 
 export default function ContactMap (props) {
   return (
-    <div style={{ width: '85vw', height: '85vh' }}>
+    <div style={{ width: '85vw', height: '40vh' }}>
       <WrappedMap
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&
         libraries=geometry,drawing,places&key=AIzaSyAfNSw-ajKMqtUoBG5Vu-ftKKFyqiOqwks`}
@@ -43,6 +47,26 @@ export default function ContactMap (props) {
         containerElement={<div style={{ height: '100%' }} />}
         mapElement={<div style={{ height: '100%' }} />}
       />
+      <Card style={{ width: '100%' }}>
+        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+        Some quick example text to build on the card title and make up the bulk of
+        the cards content.
+          </Card.Text>
+        </Card.Body>
+        <ListGroup className="list-group-flush">
+          <ListGroupItem>Cras justo odio</ListGroupItem>
+          <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+          <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        </ListGroup>
+        <Card.Body>
+          <Card.Link href="#">Card Link</Card.Link>
+          <Card.Link href="#">Another Link</Card.Link>
+        </Card.Body>
+      </Card>
     </div>
+
   )
 }
