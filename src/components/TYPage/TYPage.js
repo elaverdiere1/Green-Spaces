@@ -39,6 +39,11 @@ const TYPage = () => (
         Whoa. 
       </p>
 
+      <br>
+      </br>
+
+      {/* Social Media Icons */}
+
     </div>
 
   </Fragment>
