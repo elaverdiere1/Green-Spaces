@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
 // const authenticatedOptions = (
 //   <Fragment>
@@ -18,18 +19,26 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link href="#/">Home</Nav.Link>
+    <Nav className="justify-content-center">
+      <NavDropdown title="Menu" class="collapsible-nav-dropdown">
+        <NavDropdown.Item href="#home">Home</NavDropdown.Item>
+        <NavDropdown.Item href="#LandingPage">About</NavDropdown.Item>
+        <NavDropdown.Item href="#map">Park List</NavDropdown.Item>
+        <NavDropdown.Item href="#getinvolved">Get Involved</NavDropdown.Item>
+        <NavDropdown.Item href="#eonate">Donate</NavDropdown.Item>
+        <NavDropdown.Item href="#events">Events</NavDropdown.Item>
+        <NavDropdown.Item href="#contactus">Contact Us</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
   </Fragment>
 )
 
 const Header = ({ user }) => (
   <Navbar bg="primary" variant="dark" expand="md">
-    <Navbar.Brand href="#">
-      Green Spaces
-    </Navbar.Brand>
+
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ml-auto">
+      <Nav className="justify-content-center">
         { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
         { alwaysOptions }
 
@@ -38,6 +47,9 @@ const Header = ({ user }) => (
   </Navbar>
 )
 
+// <Navbar.Brand href="#">
+//   Green Spaces
+// </Navbar.Brand>
 // { user ? authenticatedOptions : unauthenticatedOptions }
 
 export default Header
