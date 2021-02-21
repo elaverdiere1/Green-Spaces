@@ -3,6 +3,9 @@ import React, { Fragment } from 'react'
 const PaymentPage = () => (
   <Fragment>
     
+    <button type="button" class="btn btn-secondary">X</button>
+
+    
     <h2 class="text-center">Pledge Amount</h2>
 
     <br>
