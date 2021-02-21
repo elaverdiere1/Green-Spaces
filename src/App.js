@@ -60,7 +60,7 @@ class App extends Component {
           />
         ))}
         <main className="container">
-          <Route exact path='/screen1' component={ScreenOne}/>
+          <Route exact path='/' component={ScreenOne}/>
 
           <Route exact path='/screen2' component={ScreenTwo}/>
 
