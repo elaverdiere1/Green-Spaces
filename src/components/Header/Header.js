@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import '../../index.scss'
 
 // const authenticatedOptions = (
 //   <Fragment>
@@ -19,22 +20,18 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const alwaysOptions = (
   <Fragment>
-    <Nav className="justify-content-center">
-      <NavDropdown title="Menu" class="collapsible-nav-dropdown">
-        <NavDropdown.Item href="#home">Home</NavDropdown.Item>
-        <NavDropdown.Item href="#LandingPage">About</NavDropdown.Item>
-        <NavDropdown.Item href="#map">Park List</NavDropdown.Item>
-        <NavDropdown.Item href="#getinvolved">Get Involved</NavDropdown.Item>
-        <NavDropdown.Item href="#eonate">Donate</NavDropdown.Item>
-        <NavDropdown.Item href="#events">Events</NavDropdown.Item>
-        <NavDropdown.Item href="#contactus">Contact Us</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
+    <NavDropdown className="drop" title=" " class="collapsible-nav-dropdown">
+      <NavDropdown.Item href="#screen1">Screen 1</NavDropdown.Item>
+      <NavDropdown.Item href="#screen2">Screen 2</NavDropdown.Item>
+      <NavDropdown.Item href="#screen3">Screen 3</NavDropdown.Item>
+      <NavDropdown.Item href="#screen4">Screen 4</NavDropdown.Item>
+      <NavDropdown.Item href="#screen5">Screen 5</NavDropdown.Item>
+    </NavDropdown>
   </Fragment>
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar className="nav" variant="dark" expand="md">
 
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

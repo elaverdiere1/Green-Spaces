@@ -11,8 +11,11 @@ import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 
 // Green Spaces
-import LandingPage from './components/LandingPage/LandingPage'
-import ParkMap from './components/Map/ParkMap'
+import ScreenOne from './components/Screen1/Screen1'
+import ScreenTwo from './components/Screen2/Screen2'
+import ScreenThree from './components/Screen3/Screen3'
+import PaymentPage from './components/Screen4/Screen4'
+import TYPage from './components/Screen5/Screen5'
 
 class App extends Component {
   constructor () {
@@ -57,9 +60,15 @@ class App extends Component {
           />
         ))}
         <main className="container">
-          <Route exact path='/LandingPage' component={LandingPage}/>
+          <Route exact path='/screen1' component={ScreenOne}/>
 
-          <Route exact path='/map' render={() => (<ParkMap />)} />
+          <Route exact path='/screen2' component={ScreenTwo}/>
+
+          <Route exact path='/screen3' component={ScreenThree} />
+
+          <Route exact path='/screen4' component={PaymentPage} />
+
+          <Route exact path='/screen5' component={TYPage} />
 
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
