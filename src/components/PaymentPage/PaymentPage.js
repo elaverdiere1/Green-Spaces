@@ -6,7 +6,7 @@ const PaymentPage = () => (
     <br>
     </br>
     
-    <button type="button" class="btn btn-secondary">X</button>
+    <button type="button" class="btn btn-secondary">Back</button>
 
     <br>
     </br>
