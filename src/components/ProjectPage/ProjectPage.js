@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 
-const LandingPage = () => (
+const ProjectPage = () => (
   <Fragment>
+    
+    <img src="..." class="img-fluid" alt="..."></img>
+
     <h1>Liz Christy Community Garden</h1>
 
     <p>
@@ -11,26 +14,42 @@ const LandingPage = () => (
     <h2>Current Works</h2>
 
     <div class="container">
+
       <h2>Project 1</h2>
       <div class="row">
         <div class="col">
-          1
-    </div>
+          Image
+        </div>
+        <div class="col">
+          Text
+        </div>
       </div>
+
       <h2>Project 2</h2>
       <div class="row">
         <div class="col">
-          2
-    </div>
+          Image
+        </div>
+        <div class="col">
+          Text
+        </div>
       </div>
+
       <h2>Project 3</h2>
       <div class="row">
         <div class="col">
-          3
-    </div>
+          Image
+        </div>
+        <div class="col">
+          Text
+        </div>
       </div>
+
     </div>
+
+   
+
   </Fragment>
 )
 
-export default InfoPage
+export default ProjectPage
