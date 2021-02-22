@@ -29,7 +29,7 @@ const ProjectInfo = () => (
       </table>
     </div>
     <div>
-      <a href='#/screen4' className="payment"><button id="select" type="button" className="btn btn-success">Select</button></a>
+      <a href='#/screen4' className="payment"><button id="select" type="button">Select</button></a>
     </div>
     <br/>
     <h3 style={{ fontSize: '12px' }} className="text-left">Other Ways to get involved</h3>
