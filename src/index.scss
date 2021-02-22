@@ -25,18 +25,17 @@
 // }
 
 .parent {
-  width:200px;
-  height:200px;
-  position:relative;
-  z-index:0;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.inner {
-  position:absolute;
-  z-index:1;
-  bottom:0;
-  right:0;
-}
+// 
+// .inner {
+//   position:absolute;
+//   z-index:1;
+//   bottom:0;
+//   right:0;
+// }
 
 .text {
   position: relative;

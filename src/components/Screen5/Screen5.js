@@ -10,9 +10,7 @@ const TYPage = () => (
     <br/>
     <div className="parent">
       <img src={require('./Img/tree.png')}/>
-      <div className="inner"><img src={require('./Img/check.png')}/></div>
     </div>
-    <br/>
     <div className="text">
       <h2 className="text-center">In one year...</h2>
       <br>
@@ -20,13 +18,23 @@ const TYPage = () => (
       <p>
         Your tree will have absorbed more than 48 pounds of carbon dioxide from the earths atmosphere.
       </p>
-      <br/>
       <p>
         Whoa.
       </p>
     </div>
     <br/>
-    {/* Social Media Icons */}
+    <div className="icons">
+      <table>
+        <tbody>
+          <tr>
+            <td><img src={require('./Img/facebook.png')} style={{ height: 'auto', width: '30px' }}/></td>
+            <td style={{ paddingRight: '25px', paddingLeft: '25px' }}><img src={require('./Img/twitter.png')} style={{ height: 'auto', width: '45px' }}/></td>
+            <td style={{ paddingRight: '25px' }}><img src={require('./Img/instagram.png')} style={{ height: 'auto', width: '30px' }}/></td>
+            <td><img src={require('./Img/vimeo.png')} style={{ height: 'auto', width: '45px' }}/></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </Fragment>
 )
 
