@@ -21,7 +21,7 @@ import '../../index.scss'
 const alwaysOptions = (
   <Fragment>
     <NavDropdown className="drop" title=" " class="collapsible-nav-dropdown">
-      <NavDropdown.Item href="#screen1">Screen 1</NavDropdown.Item>
+      <NavDropdown.Item href="#">Screen 1</NavDropdown.Item>
       <NavDropdown.Item href="#screen2">Screen 2</NavDropdown.Item>
       <NavDropdown.Item href="#screen3">Screen 3</NavDropdown.Item>
       <NavDropdown.Item href="#screen4">Screen 4</NavDropdown.Item>

@@ -19,19 +19,19 @@ const ScreenTwo = () => (
       </tbody>
     </table>
     <br />
-    <p style={{ fontSize: '12px' }}>
-      The Liz Christy Bowery Houston Garden, started in 1973, is the first and oldest community garden in New York City. It is now a part of New York City Parks Department.
+    <p style={{ fontSize: '12px', textAlign: 'center' }}>
+      As the largest park in the south Bronx, St. Mary Park gets plenty of love from those living in the area. And who could blame them? This park offers an oasis of fun and relaxation in a busy area.
     </p>
-    <body style={{ background: '#b7f1ab' }}>
+    <body style={{ background: '#BEE3C9' }}>
       <br />
       <h1 style={{ fontSize: '16px' }}>Get Involved with our current projects!</h1>
-      <Card.Link href='#/screen3'>
+      <Card.Link href='#/screen3' style={{ textDecoration: 'none' }}>
         <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px' }}>
           <table>
             <tbody>
               <tr>
                 <td><img src={require('./Img/planting.jpeg')} style={{ height: 'auto', width: '100%' }}/></td>
-                <td style={{ fontSize: '10px' }}>Adopting a tree in your backyard parks is a unique way to be involved in your community while helping to increase the city’s urban forest canopy.</td>
+                <td style={{ fontSize: '10px', color: 'black' }}>Adopting a tree in your backyard parks is a unique way to be involved in your community while helping to increase the city’s urban forest canopy.</td>
               </tr>
             </tbody>
           </table>

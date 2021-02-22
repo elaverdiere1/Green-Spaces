@@ -32,31 +32,33 @@ const ProjectInfo = () => (
       <a href='#/screen4' className="payment"><button id="select" type="button">Select</button></a>
     </div>
     <br/>
-    <h3 style={{ fontSize: '12px' }} className="text-left">Other Ways to get involved</h3>
-    <br/>
-    <div className="icons">
-      <table>
-        <tbody>
-          <tr>
-            <td><img src={require('./Img/gardening.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-            <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/watering.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-            <td><img src={require('./Img/cleaning.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <br/>
-    <div className="icons">
-      <table>
-        <tbody>
-          <tr>
-            <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-            <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-            <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <body style={{ background: '#BEE3C9' }}>
+      <h3 style={{ fontSize: '12px' }} className="text-left">Other Ways to get involved</h3>
+      <br/>
+      <div className="icons">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src={require('./Img/gardening.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/watering.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td><img src={require('./Img/cleaning.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br/>
+      <div className="icons">
+        <table>
+          <tbody>
+            <tr style={{ paddingBottom: '100px' }}>
+              <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </body>
   </Fragment>
 )
 
