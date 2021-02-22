@@ -33,7 +33,7 @@ const ProjectInfo = () => (
     </div>
     <br/>
     <body style={{ background: '#BEE3C9' }}>
-      <h3 style={{ fontSize: '12px' }} className="text-left">Other Ways to get involved</h3>
+      <h3 style={{ fontSize: '12px', marginLeft: '10px', paddingTop: '10px', fontWeight: 'bold' }} className="text-left">Other Ways to get involved</h3>
       <br/>
       <div className="icons">
         <table>
@@ -48,15 +48,17 @@ const ProjectInfo = () => (
       </div>
       <br/>
       <div className="icons">
-        <table>
-          <tbody>
-            <tr style={{ paddingBottom: '100px' }}>
-              <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
-              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
-              <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="bottom">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+                <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+                <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </body>
   </Fragment>
