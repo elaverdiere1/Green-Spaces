@@ -39,9 +39,9 @@ const ProjectInfo = () => (
         <table>
           <tbody>
             <tr>
-              <td><img src={require('./Img/gardening.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/watering.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-              <td><img src={require('./Img/cleaning.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td><img src={require('./Img/gardening.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/watering.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+              <td><img src={require('./Img/cleaning.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
             </tr>
           </tbody>
         </table>
@@ -51,9 +51,9 @@ const ProjectInfo = () => (
         <table>
           <tbody>
             <tr style={{ paddingBottom: '100px' }}>
-              <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
-              <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px' }}/></td>
+              <td><img src={require('./Img/maintenance.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+              <td style={{ paddingRight: '50px', paddingLeft: '50px' }}><img src={require('./Img/event.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
+              <td><img src={require('./Img/donate.jpg')} style={{ height: 'auto', width: '35px', borderRadius: '50%' }}/></td>
             </tr>
           </tbody>
         </table>
