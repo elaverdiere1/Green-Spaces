@@ -9,7 +9,9 @@ const ScreenTwo = () => (
     <header>
       <img src={require('./Img/header.jpg')} style={{ height: 'auto', width: '100%' }}/>
     </header>
-    <br />
+    <br/>
+    <h2 style={{ fontSize: '24px' }}className="text-left">St. Mary&apos;s Park Bronx</h2>
+    <br/>
     <table>
       <tbody>
         <tr>
@@ -21,7 +23,7 @@ const ScreenTwo = () => (
     </table>
     <br />
     <p style={{ fontSize: '12px', textAlign: 'center' }}>
-      As the largest park in the south Bronx, St. Mary Park gets plenty of love from those living in the area. And who could blame them? This park offers an oasis of fun and relaxation in a busy area.
+      As the largest park in the south Bronx, St. Mary&apos;s Park gets plenty of love from those living in the area. And who could blame them? This park offers an oasis of fun and relaxation in a busy area.
     </p>
     <body style={{ background: '#BEE3C9' }}>
       <br />
