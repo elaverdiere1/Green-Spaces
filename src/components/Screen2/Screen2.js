@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { Card } from 'react-bootstrap'
+import '../../index.scss'
 // import { Route } from 'react-router-dom'
 // import ScreenThree from '../Screen3/Screen3'
 
@@ -24,13 +25,13 @@ const ScreenTwo = () => (
     </p>
     <body style={{ background: '#BEE3C9' }}>
       <br />
-      <h1 style={{ fontSize: '16px' }}>Get Involved with our current projects!</h1>
+      <h1 style={{ fontSize: '16px', marginLeft: '10px' }}>Get Involved with our current projects!</h1>
       <Card.Link href='#/screen3' style={{ textDecoration: 'none' }}>
-        <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px' }}>
+        <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px', borderRadius: '5%' }}>
           <table>
             <tbody>
               <tr>
-                <td><img src={require('./Img/planting.jpeg')} style={{ height: 'auto', width: '100%' }}/></td>
+                <td><img className="img" src={require('./Img/planting.jpeg')} /></td>
                 <td style={{ fontSize: '10px', color: 'black' }}>Adopting a tree in your backyard parks is a unique way to be involved in your community while helping to increase the city’s urban forest canopy.</td>
               </tr>
             </tbody>
@@ -38,22 +39,22 @@ const ScreenTwo = () => (
         </Card>
       </Card.Link>
       <br />
-      <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px' }}>
+      <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px', borderRadius: '5%' }}>
         <table>
           <tbody>
             <tr>
-              <td><img src={require('./Img/trash.jpg')} style={{ height: 'auto', width: '70%' }}/></td>
+              <td><img className="img" src={require('./Img/trash.jpg')} /></td>
               <td style={{ fontSize: '10px' }}>Join our volunteers in a community-wide park cleanup initiative. Help reduce litter to make our parks cleaner.</td>
             </tr>
           </tbody>
         </table>
       </Card>
       <br />
-      <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px' }}>
+      <Card style={{ padding: '10px', marginLeft: '10px', marginRight: '10px', borderRadius: '5%' }}>
         <table>
           <tbody>
             <tr>
-              <td><img src={require('./Img/compost.jpg')} style={{ height: 'auto', width: '70%' }}/></td>
+              <td><img className="img" src={require('./Img/compost.jpg')} /></td>
               <td style={{ fontSize: '10px' }}>Adopting a tree in your backyard parks is a unique way to be involved in your community while helping to increase the city’s urban forest canopy.</td>
             </tr>
           </tbody>

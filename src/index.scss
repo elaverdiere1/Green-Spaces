@@ -81,3 +81,10 @@ button {
 a {
   color: black;
 }
+
+.img {
+  float: left;
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
