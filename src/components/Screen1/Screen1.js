@@ -14,7 +14,7 @@ const ScreenOne = () => (
         <table>
           <tbody>
             <tr>
-              <td><img src={require('./Img/park.png')} style={{ height: '90%', width: 'auto' }}/></td>
+              <td><img className="img" src={require('./Img/park.png')} style={{ height: '90%', width: 'auto' }}/></td>
               <td style={{ fontSize: '10px' }}>Adopting a tree in your backyard parks is a unique way to be involved in your community while helping to increase the city’s urban forest canopy.</td>
             </tr>
           </tbody>
